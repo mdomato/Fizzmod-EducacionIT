@@ -63,7 +63,7 @@ Nota: usá un objeto donde cada propiedad sea un argumento, y el valor el result
 
 function cacheFunction(cb) {
   let cache = {};
-  return function cachear() {
+  return function cachear(x) {
     if (!cache.hasOwnProperty(x)) {
       cache = { ...cache, [x]: cb(x) };
     }
