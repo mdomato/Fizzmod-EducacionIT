@@ -19,14 +19,6 @@ function objectMerge(array, tiempo) {
   });
 }
 
-const arrayObj = () => [
-  { a: 1, b: 2 },
-  { c: 1, d: 2 },
-  { c: 11, b: 22 },
-];
-
-const delayTime = () => 3;
-
 /*
 La funcion contador debe retornar una funcion que cuando sea invocada retorne un valor creciente.
 el primer valor deberia ser 1.
@@ -41,11 +33,6 @@ function contador() {
     return ++counter;
   };
 }
-
-const newCounter = contador();
-console.log(newCounter());
-console.log(newCounter());
-console.log(newCounter());
 
 /*
 Usa closures para crear un cache para la funcion cb.
